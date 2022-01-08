@@ -19,18 +19,119 @@
       </a>
     </header>
     <!-- termina header -->
-    <h1>¡SH Indumentaria Deportiva!</h1>
-    <h2>Catálogo</h2>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- empieza nav  -->
+    <ul class="nav d-flex justify-content-evenly p-3 mb-2 bg-dark text-white bg-gradient ">
+      <li class="nav-item">
+        <a class="nav-link active text-white text-uppercase" aria-current="page" href="#top">Top</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active ncolor text-uppercase" aria-current="page" href="#sudadera">Sudadera</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active ncolor text-uppercase" aria-current="page" href="#calza">Calzas Cortas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active ncolor text-uppercase" aria-current="page" href="#biker">Biker</a>
+      </li>
+    </ul>
+    <!-- termina nav  -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <h1 class="text-center fw-bold">SH Indumentaria Deportiva</h1>
+    <h2 class="my-2 p-2 text-decoration-underline">Catálogo:</h2>
+
+    <div id="top">
+      <h3 class="d-inline p-3 bg-dark text-white d-flex justify-content-center">Top Deportivo</h3>
+      <h3 class="my-2 p-3">Tabla de talles:</h3>
+      <div class="my-2 p-3">
+        <table class="table">
+          <thead class="table-dark">
+            <tr>
+              <th scope="col" class="text-uppercase">Talle</th>
+              <th scope="col">S</th>
+              <th scope="col">M</th>
+              <th scope="col">L</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="text-uppercase">Busto (cm)</th>
+              <td>80-85</td>
+              <td>90-95</td>
+              <td>100-105</td>
+            </tr>          
+          </tbody>
+        </table>
+      </div>
+      <div class="d-flex justify-content-center">
+        <img src="img/top.png" alt="top" width="200px">
+      </div>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <div class="d-flex justify-content-center">
+              <img src="Img/topnegro.jpeg" alt="top deportivo negro" width="500px">
+            </div>             
+          <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-uppercase">top deportivo negro</h5>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="d-flex justify-content-center">
+              <img src="Img/toprosa.jpeg" alt="top deportivo rosa" width="500px">
+            </div>             
+          <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-uppercase">top deportivo rosa</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <img src="Img/topverde.jpeg" alt="top deportivo verde" width="500px">
+            </div>            
+          <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-uppercase">top deportivo verde</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
+
+
+    <hr>
+    <!-- inicio footer -->  
+    <div class="d-flex justify-content-center">
+      <div class="tt" data-bs-placement="top" title="Contactanos!">
+        <a class="btn btn-social" href="https://wa.me/543815722700?text=Hola!%20%F0%9F%A5%B0%20Mi%20nombre%20es%20%23%2C%20me%20interesa%20saber%20m%C3%A1s%20sobre%20los%20productos.%20">
+          <img src="https://img.icons8.com/cute-clipart/48/000000/whatsapp.png"/>        
+        </a>
+      </div>
+      <div class="tt" data-bs-placement="top" title="Seguinos!">
+        <a class="btn btn-social" href="https://www.instagram.com/solucompras/">
+          <img src="https://img.icons8.com/cute-clipart/48/000000/instagram-new.png"/>        
+        </a>
+      </div>
+    </div>
+    <!-- termina footer -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
+    <script>
+      const tooltips = document.querySelectorAll('.tt')
+      tooltips.forEach( t => {
+        new bootstrap.Tooltip(t)
+      })
+    </script>
   </body>
 </html>
