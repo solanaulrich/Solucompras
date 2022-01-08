@@ -8,5 +8,17 @@ body
 
 .nColor
 {
-    color: rgb(212, 175,55);
+    color: goldenrod;
+}
+
+.ir-arriba {
+	display:none;
+	padding:20px;
+	background:#f1b8da;
+	font-size:20px;
+	color:#000;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="Img/SH.png" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -13,7 +14,7 @@
   </head>
   <body>
     <!-- inicia header -->
-    <header class="py-2 row col-md-auto container-fluid d-flex justify-content-center">            
+    <header class="p-3 row col-md-auto container-fluid d-flex justify-content-center">            
       <a href="index.html" class="col-md-auto">
           <img src="Img/Solucompras.jpg" alt="Logo" width="200px">                   
       </a>
@@ -26,22 +27,24 @@
         <a class="nav-link active text-white text-uppercase" aria-current="page" href="#top">Top</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active ncolor text-uppercase" aria-current="page" href="#sudadera">Sudadera</a>
+        <a class="nav-link active text-white text-uppercase" aria-current="page" href="#sudadera">Sudadera</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active ncolor text-uppercase" aria-current="page" href="#calza">Calzas Cortas</a>
+        <a class="nav-link active text-white text-uppercase" aria-current="page" href="#calza">Calzas Cortas</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active ncolor text-uppercase" aria-current="page" href="#biker">Biker</a>
+        <a class="nav-link active text-white text-uppercase" aria-current="page" href="#biker">Biker</a>
       </li>
     </ul>
-    <!-- termina nav  -->
+                                <!-- termina nav  -->
+    <div class="d-flex justify-content-center">
+      <img src="img/SH.png" alt="SH logo" width="100px">
+    </div>
+    <h1 class="text-center fw-bold">Indumentaria Deportiva</h1>
 
-    <h1 class="text-center fw-bold">SH Indumentaria Deportiva</h1>
-    <h2 class="my-2 p-2 text-decoration-underline">Catálogo:</h2>
-
+                                <!-- inicia top deportivo -->
     <div id="top">
-      <h3 class="d-inline p-3 bg-dark text-white d-flex justify-content-center">Top Deportivo</h3>
+      <h3 class="d-inline p-3 bg-dark d-flex justify-content-center text-white">Top Deportivo</h3>
       <h3 class="my-2 p-3">Tabla de talles:</h3>
       <div class="my-2 p-3">
         <table class="table">
@@ -56,9 +59,9 @@
           <tbody>
             <tr>
               <th scope="row" class="text-uppercase">Busto (cm)</th>
-              <td>80-85</td>
-              <td>90-95</td>
-              <td>100-105</td>
+              <td class="fw-bold">80-85</td>
+              <td class="fw-bold">90-95</td>
+              <td class="fw-bold">100-105</td>
             </tr>          
           </tbody>
         </table>
@@ -66,11 +69,11 @@
       <div class="d-flex justify-content-center">
         <img src="img/top.png" alt="top" width="200px">
       </div>
-      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div id="carousel1" class="carousel carousel-dark slide my-3 p-3" data-bs-ride="carousel">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
@@ -98,16 +101,54 @@
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Anterior</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Siguiente</span>
         </button>
       </div>
     </div>
+                                <!-- termina top deportivo -->
+
+                                <!-- inicia sudadera -->
+    <div id="sudadera">
+      <h3 class="d-inline my-3 p-3 bg-dark d-flex justify-content-center text-white">Sudadera</h3>
+      <h3 class="my-2 p-3">Tabla de talles:</h3>
+      <div class="my-2 p-3">
+        <table class="table">
+          <thead class="table-dark">
+            <tr>
+              <th scope="col" class="text-uppercase">Talle</th>
+              <th scope="col">S</th>
+              <th scope="col">M</th>
+              <th scope="col">L</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">a) ANCHO (CM)</th>
+              <td class="fw-bold">38</td>
+              <td class="fw-bold">40</td>
+              <td class="fw-bold">42</td>
+            </tr> 
+            <tr>
+              <th scope="row">b) LARGO (CM)</th>
+              <td class="fw-bold">54</td>
+              <td class="fw-bold">56</td>
+              <td class="fw-bold">59</td>
+            </tr>         
+          </tbody>
+        </table>
+      </div>
+      <div class="d-flex justify-content-center">
+        <img src="img/sudadera.png" alt="sudadera" width="250px">
+      </div>
+      
+      
+                              <!-- termina sudadera -->
 
 
     <hr>
