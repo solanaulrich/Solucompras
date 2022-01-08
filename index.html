@@ -24,16 +24,22 @@
     <!-- empieza nav  -->
     <ul class="nav d-flex justify-content-evenly p-3 mb-2 bg-dark text-white bg-gradient ">
       <li class="nav-item">
-        <a class="nav-link active text-white text-uppercase" aria-current="page" href="#top">Top</a>
+        <a class="nav-link active text-white text-uppercase" aria-current="page" href="#top">Tops</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active text-white text-uppercase" aria-current="page" href="#sudadera">Sudadera</a>
+        <a class="nav-link active text-white text-uppercase" aria-current="page" href="#sudadera">Sudaderas</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link active dropdown-toggle text-uppercase text-white" href="#calza" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Calzas
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item text-uppercase" href="#calza">Calzas Cortas</a></li>
+          <li><a class="dropdown-item text-uppercase" href="#biker">Bikers</a></li>
+        </ul>
       </li>
       <li class="nav-item">
-        <a class="nav-link active text-white text-uppercase" aria-current="page" href="#calza">Calzas Cortas</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active text-white text-uppercase" aria-current="page" href="#biker">Biker</a>
+        <a class="nav-link active text-white text-uppercase" aria-current="page" href="#conjuntos">Conjuntos</a>
       </li>
     </ul>
                                 <!-- termina nav  -->
@@ -44,7 +50,7 @@
 
                                 <!-- inicia top deportivo -->
     <div id="top">
-      <h3 class="d-inline p-3 bg-dark d-flex justify-content-center text-white">Top Deportivo</h3>
+      <h3 class="d-inline p-3 bg-dark d-flex justify-content-center text-white">Tops Deportivos</h3>
       <h3 class="my-2 p-3">Tabla de talles:</h3>
       <div class="my-2 p-3">
         <table class="table">
@@ -69,53 +75,38 @@
       <div class="d-flex justify-content-center">
         <img src="img/top.png" alt="top" width="200px">
       </div>
-      <div id="carousel1" class="carousel carousel-dark slide my-3 p-3" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
+      <div id="carouselExampleInterval1" class="carousel carousel-dark slide my-3 p-3" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
             <div class="d-flex justify-content-center">
-              <img src="Img/topnegro.jpeg" alt="top deportivo negro" width="500px">
-            </div>             
-          <div class="carousel-caption d-none d-md-block">
-              <h5 class="text-uppercase">top deportivo negro</h5>
+              <img src="Img/topnegro.jpeg" class="d-block" alt="..." width="300px">
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
             <div class="d-flex justify-content-center">
-              <img src="Img/toprosa.jpeg" alt="top deportivo rosa" width="500px">
-            </div>             
-          <div class="carousel-caption d-none d-md-block">
-              <h5 class="text-uppercase">top deportivo rosa</h5>
+              <img src="Img/toprosa.jpeg" class="d-block" alt="..." width="300px">
             </div>
           </div>
           <div class="carousel-item">
             <div class="d-flex justify-content-center">
-              <img src="Img/topverde.jpeg" alt="top deportivo verde" width="500px">
-            </div>            
-          <div class="carousel-caption d-none d-md-block">
-              <h5 class="text-uppercase">top deportivo verde</h5>
+              <img src="Img/topverde.jpeg" class="d-block" alt="..." width="300px">
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval1" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
+          <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval1" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
+          <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </div>
                                 <!-- termina top deportivo -->
 
                                 <!-- inicia sudadera -->
     <div id="sudadera">
-      <h3 class="d-inline my-3 p-3 bg-dark d-flex justify-content-center text-white">Sudadera</h3>
+      <h3 class="d-inline my-3 p-3 bg-dark d-flex justify-content-center text-white">Sudaderas</h3>
       <h3 class="my-2 p-3">Tabla de talles:</h3>
       <div class="my-2 p-3">
         <table class="table">
@@ -146,13 +137,197 @@
       <div class="d-flex justify-content-center">
         <img src="img/sudadera.png" alt="sudadera" width="250px">
       </div>
+      <div id="carouselExampleInterval" class="carousel carousel-dark slide my-3 p-3" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <div class="d-flex justify-content-center">
+              <img src="Img/sudaderanegra.jpeg" class="d-block" alt="sudadera negra" width="350px">
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="d-flex justify-content-center">
+              <img src="Img/sudaderafluor.jpeg" class="d-block" alt="sudadera fluor" width="350px">
+            </div>          
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <img src="Img/sudaderablanca.jpeg" class="d-block" alt="sudadera blanca" width="350px">
+            </div>           
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <img src="Img/sudaderarosa.jpeg" class="d-block" alt="sudadera rosa" width="350px">
+            </div>           
+          </div>          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
       
       
                               <!-- termina sudadera -->
 
+                              <!-- inicia Calza -->
+
+      <div id="calza">
+      <h3 class="d-inline my-3 p-3 bg-dark d-flex justify-content-center text-white">Calzas</h3>
+      <h3 class="my-2 p-3">Tabla de talles:</h3>
+      <div class="my-2 p-3">
+        <table class="table">
+          <thead class="table-dark">
+            <tr>
+              <th scope="col" class="text-uppercase">Talle</th>
+              <th scope="col">S</th>
+              <th scope="col">M</th>
+              <th scope="col">L</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">CADERA (CM)</th>
+              <td class="fw-bold">80-90</td>
+              <td class="fw-bold">90-100</td>
+              <td class="fw-bold">100-110</td>
+            </tr> 
+            <tr>
+              <th scope="row">CINTURA (CM)</th>
+              <td class="fw-bold">60-68</td>
+              <td class="fw-bold">69-77</td>
+              <td class="fw-bold">78-86</td>
+            </tr>         
+          </tbody>
+        </table>
+      </div>
+      <div class="d-flex justify-content-center">
+        <img src="img/calza.png" alt="calza talle" width="400px">
+      </div>
+      <div>
+        <h3 class="my-3 p-3 text-uppercase fw-bold text-center text-decoration-underline">Calzas cortas:</h3>
+        <div id="carouselExampleInterval2" class="carousel carousel-dark slide my-3 p-3" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="d-flex justify-content-center">
+                <img src="Img/calzanegra.jpeg" class="d-block" alt="calza negra" width="300px">
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="d-flex justify-content-center">
+                <img src="Img/calzalila.jpeg" class="d-block" alt="calza lila" width="300px">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+                <img src="Img/calzarosa.jpeg" class="d-block" alt="calza rosa" width="300px">
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      <div>
+        <h3 id="biker" class="my-3 p-3 text-uppercase fw-bold text-center text-decoration-underline">Bikers:</h3>
+        <div id="carouselExampleInterval3" class="carousel carousel-dark slide my-3 p-3" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="d-flex justify-content-center">
+                <img src="Img/bikernegra.jpeg" class="d-block" alt="biker negra" width="350px">
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="d-flex justify-content-center">
+                <img src="Img/bikerrosa.jpeg" class="d-block" alt="biker rosa" width="350px">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+                <img src="Img/bikerverde.jpeg" class="d-block" alt="biker verde" width="350px">
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval3" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval3" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      
+                              <!-- termina calza  -->
+
+                              <!-- inicio conjuntos  -->
+        <div id="conjuntos">
+          <h3 class="d-inline p-3 bg-dark d-flex justify-content-center text-white">Conjuntos</h3>
+          <p class="fs-2 p-2">Podés armar los conjuntos a tu gusto, obteniento un descuento por llevar dos prendas o más. Se pasa el monto total del pedido por privado.</p>
+          <p class="fs-3 p-2">Aquí les dejamos algunas ideas de conjuntos: </p>
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="d-flex justify-content-center">
+                  <img src="Img/combonegro.jpeg" class="card-img-top w-50" alt="conjunto negro">
+                </div>                
+                <div class="card-body">
+                  <h5 class="card-title">Conjunto monocromático</h5>
+                  <p class="card-text">Productos: sudadera negra, top negro y biker negra.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="d-flex justify-content-center">
+                  <img src="Img/comborosa.jpeg" class="card-img-top w-50" alt="conjunto rosa">
+                </div>                
+                <div class="card-body">
+                  <h5 class="card-title">Conjunto monocromático 2</h5>
+                  <p class="card-text">Productos: top rosa, calza corta rosa y biker rosa.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="d-flex justify-content-center">
+                  <img src="Img/combolila.jpeg" class="card-img-top w-50" alt="conjunto lila">
+                </div>                
+                <div class="card-body">
+                  <h5 class="card-title">Conjunto combinado</h5>
+                  <p class="card-text">Productos: sudadera negra, top negro y calza corta lila.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="d-flex justify-content-center">
+                  <img src="Img/comboverde.jpeg" class="card-img-top w-50" alt="conjunto verde">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Conjunto combinado 2</h5>
+                  <p class="card-text">Productos: sudadera blanca, top verde y biker verde.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+                              <!-- termina conjuntos -->
+
 
     <hr>
     <!-- inicio footer -->  
+    <p class="fs-4 text-center">Tu consulta no molesta, aqui dejamos nuestras redes sociales:</p>
     <div class="d-flex justify-content-center">
       <div class="tt" data-bs-placement="top" title="Contactanos!">
         <a class="btn btn-social" href="https://l.instagram.com/?u=https%3A%2F%2Fwa.link%2F45or2m&e=ATM7M5J7y_l3S3yK3-Ut2bcekrrUzM7zZNZP4Dfx5Qjp2PTj1ock3KMB2lZfxwWdbr8AKYD0txu6ouvQL-fVrV7F3biqnas5-YceJg&s=1">
